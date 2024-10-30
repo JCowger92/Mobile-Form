@@ -3,18 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="default.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
   <title>Mobile Form</title>
 </head>
 <body>
   <div class="container">
-    <span class="navbar">
-      <a href="#">&#8801</a>
-      <h2>Contacts</h2>
-      <a href="#">&#9906</a>
-      <a href="#">&#8942</a>
-    </span>
+    <nav>
+      <span class="navbar">
+        <a href="#">&#8801</a>
+        <h2>Contacts</h2>
+        <ul>
+          <li><a href="#">&#9906</a></li>
+          <li><a href="#">&#8942</a></li>
+        </ul>
+      </span>
+    </nav>
     <div class="form">
-      <label for="name"><img src="/assets/profile-icon-grey.png" alt=""></label>
+      <label class="label" for="name"><img src="/assets/profile-icon-grey.png" alt=""></label>
       <input 
         type="text" 
         name="name" 
@@ -22,13 +29,14 @@
         placeholder="Name"
         required
       ><br>
-      <label for="phone"><img src="/assets/phone-icon-grey.png" alt=""></label>
+      <label class="label" for="phone"><img src="/assets/phone-icon-grey.png" alt=""></label>
       <input 
         type="tel" 
         name="phone" 
         id="phone"
         pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
         maxlength="10"
+        size="10"
         placeholder="Phone Number"
         required
       >
@@ -39,7 +47,7 @@
         <option value="label">Office</option>
       </select><br>
       <div class="location">
-        <label for="address"><img src="/assets/map-pin-icon-grey.png" alt=""></label>
+        <label class="label" for="address"><img src="/assets/map-pin-icon-grey.png" alt=""></label>
         <input
           type="text"
           name="address"
@@ -119,7 +127,7 @@
         placeholder="Zip"
         ><br>
       </div>
-      <label for="email"><img src="/assets/envelope-icon-grey.png" alt=""></label>
+      <label class="label" for="email"><img src="/assets/envelope-icon-grey.png" alt=""></label>
       <input 
         type="email" 
         name="email" 
@@ -127,7 +135,7 @@
         required
         placeholder="Email"
       ><br>
-      <label for="bday"><img src="/assets/birthday-cake-icon-grey.png" alt=""></label>
+      <label class="label" for="bday"><img src="/assets/birthday-cake-icon-grey.png" alt=""></label>
       <input 
         type="date" 
         name="bday" 
