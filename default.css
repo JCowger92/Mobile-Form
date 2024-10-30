@@ -1,0 +1,50 @@
+label img {
+  width: 15px;
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  margin-right: 10px;
+}
+
+nav {
+  width: 250px;
+  margin: auto;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: blueviolet;
+}
+
+.container {
+  width: 250px;
+  margin: auto;
+}
+
+.navbar h2 {
+  margin-right: auto;
+  margin-left: 20px;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+#city, #state {
+  margin-left: 29px;
+}
+
+.state {
+  max-width: 100px;
+}
+
+.label {
+  margin-right: 10px;
+}
