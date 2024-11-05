@@ -1,5 +1,5 @@
 label img {
-  width: 15px;
+  max-width: 100%;
   vertical-align: middle;
 }
 
@@ -21,12 +21,28 @@ ul {
   list-style: none;
 }
 
+input {
+  max-width: 100%;
+}
+
 input, label {
-  width: 100%;
+  width: 70%;
+  max-width: 100%;
+  line-height: 35px;
+  margin: 10px;
+}
+
+input #zip {
+  max-width: 7ch;
+}
+
+select {
+  padding: 10px 0;
+  margin: 10px;
 }
   
 .container {
-  width: 80%;
+  width: 40%;
   margin: auto;
 }
 
@@ -58,17 +74,44 @@ input, label {
 }
 
 .form {
-
+  max-width: 100%;
+  display: grid;
+  padding: 10px 30px;
+  gap: 10px;
 }
 
-.state {
-  max-width: 100px;
+.input {
+  width: 100%;
 }
 
+.name {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 45px 1fr;
+}
+
+.phone {
+  display: grid;
+  grid-template-columns: 45px 1fr 1fr;
+  grid-template-rows: 1fr 0;
+  column-gap: 10px;
+}
 .label {
-  margin-right: 10px;
+  align-items: center;
 }
 
-#city, #state {
-  margin-left: 29px;
+.location, .email, .bday {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 45px 1fr;
+}
+
+.state-zip {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 100%;
+}
+
+.select-input {
+  max-width: 100%;
 }
