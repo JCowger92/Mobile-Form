@@ -37,6 +37,7 @@ input #zip {
 }
 
 select {
+  max-width: 85%;
   padding: 10px 0;
   margin: 10px;
 }
@@ -94,8 +95,12 @@ select {
   display: grid;
   grid-template-columns: 45px 1fr 1fr;
   grid-template-rows: 1fr 0;
-  column-gap: 10px;
 }
+
+.phn-label {
+  margin-left: 27%;
+}
+
 .label {
   align-items: center;
 }
@@ -104,6 +109,10 @@ select {
   max-width: 100%;
   display: grid;
   grid-template-columns: 45px 1fr;
+}
+
+.state {
+  max-width: 100%;
 }
 
 .state-zip {
