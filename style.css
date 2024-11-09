@@ -36,14 +36,33 @@
   max-width: 100%;
   display: grid;
   padding: 10px 5px;
+  gap: 10px;
+}
+
+.label {
+  align-items: center;
 }
 
 .input {
+  max-width: 100%;
+  box-shadow: 1px;
+}
+
+.select-input {
   max-width: 100%;
 }
 
 .alt {
   background-color: #e8e8e8;
+  color: #7e7e7e;
+  border: 1px solid transparent;
+  border-bottom: 2px solid #7e7e7e;
+}
+
+.alt-text {
+  border: 1px solid #7e7e7e;
+  color: #e8e8e8;
+  box-shadow: 1px 1px 3px #e8e8e8;
 }
 
 .name {
@@ -54,16 +73,18 @@
 
 .phone {
   display: grid;
-  grid-template-columns: 30px 1fr 1fr;
+  grid-template-columns: 30px 2fr 1fr;
   grid-template-rows: 1fr 0;
 }
 
 .phn-label {
+  justify-self: right;
+  width: 100%;
   margin-left: 27%;
 }
 
-.label {
-  align-items: center;
+.location {
+  gap: 10px 0;
 }
 
 .location, .email, .bday {
@@ -73,14 +94,35 @@
 }
 
 .state {
+  width: 100%;
   max-width: 100%;
 }
 
 .state-zip {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
+  gap: 10px;
 }
 
-.select-input {
-  max-width: 100%;
+.bday {
+  width: 100%;
+  position: relative;
+  align-items: center; /* Vertically align items in the flex container */
 }
+
+.calendar-icon {
+  visibility: hidden;
+}
+
+.bday:has(:placeholder-shown) .calendar-icon {
+  visibility: visible;
+}
+
+.calendar-icon {
+  position: absolute;
+  right: 15px;
+  top: 50%; 
+  transform: translateY(-50%);
+  color: #7e7e7e;
+}
+
