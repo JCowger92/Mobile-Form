@@ -40,7 +40,7 @@
       <div class="phone select-input">
         <label class="label phone" for="phone"><img src="/assets/phone-icon-grey.png" alt=""></label>
         <input
-          class="input"
+          class="alt-text phn input"
           type="tel"
           name="phone"
           id="phone"
@@ -49,7 +49,7 @@
           size="10"
           placeholder="Phone Number"
           required>
-        <select class="phone" name="phn-label" id="phn-label">
+        <select class="alt-text phn phone" name="phn-label" id="phn-label">
           <option value="phn-label" selected disabled>Label</option>
           <option value="phn-label">Home</option>
           <option value="phn-label">Mobile</option>
@@ -67,7 +67,7 @@
           required
         ><br>
         <input
-          class="input"
+          class="alt-text input"
           type="text"
           name="city"
           id="city"
@@ -144,7 +144,7 @@
       <div class="email">
         <label class="label" for="email"><img src="/assets/envelope-icon-grey.png" alt=""></label>
         <input
-          class="input"
+          class="alt-text input"
           type="email"
           name="email"
           id="email"
@@ -154,16 +154,21 @@
       </div>
       <div class="bday">
         <label class="label" for="bday"><img src="/assets/birthday-cake-icon-grey.png" alt=""></label>
-        <input
-          class="input alt"
-          type="date"
-          name="bday"
-          id="bday"
-          placeholder="Birthday"
+        <input 
+        class="input alt"
+        type="text" 
+        name="date" 
+        id="bday"
+        onfocus="(this.type='date')" 
+        onblur="if(!this.value)this.type='text'"
+        placeholder="Birthday"
         >
+        <span
+          class="calendar-icon">
+          <i class="fa-solid fa-calendar-day fa-flip-horizontal"></i>
+        </span>
       </div>
     </div>
   </div>
-  
 </body>
 </html>
