@@ -23,6 +23,7 @@ ul {
 
 input {
   max-width: 100%;
+  border-radius: 5px;
 }
 
 input, label {
@@ -39,4 +40,5 @@ select {
   max-width: 93%;
   padding: 10px 0;
   margin: 5px;
+  border-radius: 5px;
 }
